@@ -22,5 +22,3 @@ function createGallery(items) {
     })
     .join('');
 }
-
-// console.log(galleryItems);
