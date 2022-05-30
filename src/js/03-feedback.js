@@ -32,7 +32,7 @@ function getStorageData() {
   const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
   if (savedData) {
-    formEl.elements.email.value = savedData.email;
-    formEl.elements.message.value = savedData.message;
+    formEl.elements.email.value = savedData.email || '';
+    formEl.elements.message.value = savedData.message || '';
   }
 }
